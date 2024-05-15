@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            color: black;
+        }
+        body{
+            background-color: #735DA5;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .form1{
+            background-color: #D3C5E5;
+            height: 50vh;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 25vw;
+            margin-top: 25vh;
+            border-radius: 5px ;
+        }
+       
+
+        #deletebutton{
+            width: 7vw;
+            position: relative;
+            left: 4vw;
+            cursor: pointer;
+        }
+        input{
+            margin: 2vh 0;
+            height: 5vh;
+            width: 15vw;
+            border-radius: 3px;
+            border: none ;
+        }
+    </style>
+</head>
+<body>
+    <div class="form1">
+    <form action="deleteAccount" method="post">
+        <input type="text" name="username" id="" required placeholder="Username"><br>
+        <input type="password" name="password" id="" required placeholder="Password"><br>
+        <h4>Delete account permanently?</h4>
+        <input type="submit" name="" id="deletebutton" value="Delete">
+    </form>
+</div>
+</body>
+</html>
