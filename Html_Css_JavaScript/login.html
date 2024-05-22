@@ -54,43 +54,74 @@
 
         #loginButton {
             background-color: #c1b0e8;
-             cursor: pointer;
+            cursor: pointer;
         }
-        .password{
+
+        .password {
             display: flex;
             justify-content: center;
             margin: 0 auto;
             width: 30vw;
         }
-        .register{
+
+        .register {
             border-radius: 5px;
             margin: 2vh auto;
             height: 4vh;
             border: 2px solid #816ab7;
             width: 30vw;
         }
-        .register span{
+
+        .register span {
             padding-left: 4vw;
         }
 
+        .logo span {
+            display: inline;
+        }
+
+        .logo span img {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 41vw;
+            top: 6vh;
+            mix-blend-mode: multiply;
+            transition-duration: 1.5s;
+            opacity: 0;
+        }
+
+        #logoname {
+            position: absolute;
+            left: 45vw;
+            top: 4vh;
+            font-size: 300%;
+            font-weight: lighter;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
     </style>
+    <script src="common.js"></script>
 </head>
 
-<body>
+<body onload="logoani()">
+    <div class="logo">
+        <span><img src="logos/Screenshot (26).png" alt="" id="logo"></span>
+        <span id="logoname">SocialBee</span>
+    </div>
 
     <div class="loginForm">
         <form action="login" method="post">
             <input type="text" name="username" required placeholder="Username"><br>
             <input type="password" name="password" id="" required placeholder="Password"><br>
-            <input type="submit"  id="loginButton" value="Login"><br>
+            <input type="submit" id="loginButton" value="Login"><br>
         </form>
     </div>
     <div class="password">
         <a href="passwordReset.html">Forgot Password</a>
     </div>
-<div class="register">
-    <span>Dont have an account?</span> <span><a href="register.html">Sign Up</a></span>
-</div>
+    <div class="register">
+        <span>Dont have an account?</span> <span><a href="index.html">Sign Up</a></span>
+    </div>
 </body>
 
 </html>
